@@ -1,4 +1,20 @@
-<?php
+<?php session_start();
+
+$incorrect = false;
+
+if (!isset($_POST['mdp']) || !isset($_POST['identifiant']))
+{
+}
+elseif ($_POST['mdp'] !== "kangourou" || $_POST['identifiant'] !== "kangourou")
+{
+    $incorrect = true;
+}
+else {
+    $_SESSION['login'] = 1;
+    header('Location: index.php');
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +26,7 @@
 <link rel="stylesheet" href="./style/login.css">
 <body>
     <div class="accueil">
+
         <div class="donnée utilisateur">
             Entrer votre pseudo et votre mot de passe
             <form action ="login.php" method="post">
@@ -31,6 +48,17 @@
                         </td>
                     </tr>
                 </table>
+
+                <div class="error">
+                    <?php
+                    if ($incorrect)
+                        echo "*erreur mot de passe ou identifiant incorrect !*";
+                    ?>
+                </div>
+
+                <input type="submit"
+                       class="confirm"
+                       value="Confirmer"/>
             </form>
         </div>
     </div>
