@@ -22,8 +22,9 @@ else {
 <head>
     <meta charset="utf-8">
     <title>Clevrean</title>
+    <link rel="stylesheet" href="./style/login.css">
 </head>
-<link rel="stylesheet" href="./style/login.css">
+
 <body>
     <div class="accueil">
 
@@ -61,6 +62,10 @@ else {
                        value="Confirmer"/>
             </form>
         </div>
+        
     </div>
+
 </body>
+
+</html>
 
