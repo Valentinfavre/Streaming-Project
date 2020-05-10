@@ -21,49 +21,69 @@ else {
 <html lang=fr dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>Clevrean</title>
+    <title>JustChill</title>
     <link rel="stylesheet" href="./style/login.css">
 </head>
 
 <body>
-    <div class="accueil">
 
-        <div class="donnée utilisateur">
-            Entrer votre pseudo et votre mot de passe
-            <form action ="login.php" method="post">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="identifiant">Identifiant</label> :
-                        </td>
-                        <td>
-                            <input type="text" class="barre" name="identifiant" id="identifiant"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="mdp">Mot de passe</label> :
-                        </td>
-                        <td>
-                            <input type="password" class="barre" name="mdp" id="mdp" required/>
-                        </td>
-                    </tr>
-                </table>
 
-                <div class="error">
-                    <?php
-                    if ($incorrect)
-                        echo "*erreur mot de passe ou identifiant incorrect !*";
-                    ?>
-                </div>
+<div class="accueil">
 
-                <input type="submit"
-                       class="confirm"
-                       value="Confirmer"/>
-            </form>
-        </div>
-        
+    <img src="ressources/icon/cooltext357031301025932.png"
+         class="logo"
+         alt="logo"/>
+
+    <div class="donnée_utilisateur">
+        <form action ="login.php" method="post">
+            <table>
+                <tr>
+                    <td>
+                        <label for="identifiant"></label>
+                    </td>
+                    <td>
+                        <div class="barre1"><input type="text" class="barre" name="identifiant" id="identifiant"
+                               placeholder=" Username or email"/></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="mdp"></label>
+                    </td>
+                    <td>
+                        <div class="barre2"><input type="password" class="barre" name="mdp" id="mdp" required
+                               placeholder=" Password"/></div>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="error">
+                <?php
+                if ($incorrect) {
+                    echo "<script language='JavaScript'>alert('Password or username is incorrect');</script>";
+                }
+                ?>
+            </div>
+            <div class="remember">
+                <br/>
+                <label for="remember">
+                    <input name="remember" class="checkbox" type="checkbox"/>
+                    Remember me
+                </label>
+                <br/>
+            </div>
+
+            <input type="submit"
+                   class="login"
+                   value="LOGIN"/>
+
+            <div class="register">
+                Register
+            </div>
+        </form>
     </div>
+
+</div>
 
 </body>
 
