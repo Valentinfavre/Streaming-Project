@@ -20,28 +20,70 @@
             <table>
                 <tr>
                     <td>
-                        <label for="identifiant"></label>
+                        <label for="username"></label>
                     </td>
                     <td>
-                        <div class="barre1"><input type="text" class="barre" name="identifiant" id="identifiant"
-                                                   placeholder=" Username or email"/></div>
+                        <div class="barre1">
+                            <input type="text" class="barre" name="username" id="username" required
+                                                   placeholder=" Username"/>
+                        </div>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>
+                        <label for="name"></label>
+                    </td>
+                    <td>
+                        <div class="barre2">
+                            <input type="text" class="barre" name="username" id="username" required
+                            placeholder=" Name">
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email"></label>
+                    </td>
+                    <td>
+                        <div class="barre3">
+                            <input type="text" class="barre" name="email" id="email" required
+                                   placeholder=" E-mail">
+                        </div>
+                    </td>
+                </tr>
+
                 <tr>
                     <td>
                         <label for="mdp"></label>
                     </td>
                     <td>
-                        <div class="barre2"><input type="password" class="barre" name="mdp" id="mdp" required
-                                                   placeholder=" Password"/></div>
+                        <div class="barre4">
+                            <input type="password" class="barre" name="mdp" id="mdp" required
+                                                   placeholder=" Password"/>
+                        </div>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>
+                        <label for="confirm_mdp"></label>
+                    </td>
+                    <td>
+                        <div class="barre5">
+                            <input type="text" class="barre" name="confirm_mdp" id="confirm_mdp" required
+                                   placeholder=" Confirm Password">
+                        </div>
+                    </td>
+                </tr>
+
             </table>
 
             </div>
 
             <input type="submit"
-                   class="login"
+                   class="create"
                    value="CREATE A NEW ACCOUNT"/>
 </div>
 

@@ -1,0 +1,91 @@
+em{
+    font-size: xx-large;
+}
+
+body{
+    margin: 0;
+    color: gray;
+    background-image: url('/ressources/login/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: sans-serif;
+}
+
+input:focus{
+    outline:none;
+}
+
+.logo{
+    width: 65%;
+    margin: 6vh 0 auto;
+}
+.accueil{
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    height: 70vh;
+    box-shadow: 0 0 2em black
+}
+
+.donnée_utilisateur{
+    margin: 0 auto;
+}
+
+
+.barre {
+    background-color: #11ffee00;
+    border: 1px solid deepskyblue;
+    border-radius: 5px;
+    height: 4vh;
+    width: 20vw;
+    color: white;
+    opacity: 1;
+}
+
+.barre1{
+    margin-top: 2vh;
+    margin-left: 45%;
+}
+
+.barre2{
+    margin-top:2vh;
+    margin-left: 45%;
+}
+
+.barre3{
+    margin-top: 2vh;
+    margin-left: 45%;
+}
+
+.barre4{
+    margin-top: 2vh;
+    margin-left: 45%;
+}
+
+.barre5{
+    margin-top: 2vh;
+    margin-left: 45%;
+}
+
+
+.error{
+    margin: auto;
+    font-size: 100%;
+}
+
+.create{
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    height: 8vh;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: deepskyblue;
+    color: white;
+    margin-top: 4vh;
+}
+
