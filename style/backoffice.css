@@ -30,7 +30,7 @@ footer {
   text-align: center;
 }
 
-.bouton accounts {
+.accounts {
 display:block;
 width:300px;
 line-height:50px;
@@ -40,6 +40,72 @@ background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100
 color:white;
 text-decoration:none;
 }
-.bouton accounts:hover {
+.accounts:hover {
+background-position: right center;
+}
+
+.admin_modos {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.admin_modos:hover {
+background-position: right center;
+}
+.Contents {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.Contents:hover {
+background-position: right center;
+}
+.addvideo {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.addvideo:hover {
+background-position: right center;
+}
+.addmusic {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.addmusic:hover {
+background-position: right center;
+}
+.backup {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.backup:hover {
 background-position: right center;
 }
