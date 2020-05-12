@@ -11,7 +11,7 @@
 
 <div class="accueil">
 
-    <img src="ressources/icon/cooltext357031301025932.png"
+    <img src="ressources/icon/iconwebsite.png"
          class="logo"
          alt="logo"/>
 
@@ -72,7 +72,7 @@
                     </td>
                     <td>
                         <div class="barre5">
-                            <input type="text" class="barre" name="confirm_mdp" id="confirm_mdp" required
+                            <input type="password" class="barre" name="confirm_mdp" id="confirm_mdp" required
                                    placeholder=" Confirm Password">
                         </div>
                     </td>

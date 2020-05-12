@@ -43,7 +43,7 @@ else {
                     </td>
                     <td>
                         <div class="barre1"><input type="text" class="barre" name="identifiant" id="identifiant"
-                               placeholder=" Username or email"/></div>
+                               required placeholder=" Username or email"/></div>
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +60,7 @@ else {
             <div class="error">
                 <?php
                 if ($incorrect) {
-                    echo "<script language='JavaScript'>alert('Password or username is incorrect');</script>";
+                    echo "<script>alert('Password or username is incorrect');</script>";
                 }
                 ?>
             </div>

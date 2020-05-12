@@ -70,12 +70,6 @@ input:focus{
     margin-left: 45%;
 }
 
-
-.error{
-    margin: auto;
-    font-size: 100%;
-}
-
 .create{
     text-align: center;
     border: none;
