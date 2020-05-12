@@ -30,7 +30,7 @@ else {
 
 <div class="accueil">
 
-    <img src="ressources/icon/cooltext357031301025932.png"
+    <img src="ressources/icon/iconwebsite.png"
          class="logo"
          alt="logo"/>
 
@@ -88,4 +88,3 @@ else {
 </body>
 
 </html>
-
