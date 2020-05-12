@@ -16,7 +16,7 @@
 <div id="miseformeaffiche">
     /*la categorie nouveau*/
     <div id="categorie"><h2> Nouveautées</h2></div>
-    /*ce sont les 4 div qui contiens les 4 affiche*/
+
     <div id="encadrementFilm">
         <img src="image/bigbunny.PNG" alt="bigbunny" alt="bigbunnymovie" id="image"
              onmouseover = "hoverPlay(this)" onmouseout = "unhoverbunny(this)" onclick="lecteurpage(1)">
