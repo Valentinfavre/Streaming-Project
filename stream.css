@@ -1,3 +1,4 @@
+/*la premiere partie qui gére le css de la page index.php*/
 body{
     height: 800px;
     margin: 0;
@@ -94,7 +95,8 @@ body{
     font-family: 'Bitter', serif;
 }
 
-/* la mise en forme des descriptions de film
+/* //////////////////////////////////////////
+la deuxiéme partie du css qui gére la page bunny.php
 ////////////////////////////////////////////*/
 #bodyfilmdescription{
     background-image: url('image/bigbunny2.png');

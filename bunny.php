@@ -6,17 +6,17 @@
 <head>
     <title> Bunny</title> <!-- titre de l'onglet -->
     <meta charset = "utf-8" />
-    <script src = "streaming.js"> </script>
+    <script src = "stream.js"> </script>
     <link rel = "stylesheet" type = "text/css" href = "stream.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
 </head>
 <body id="bodyfilmdescription">
 
 <div id="haut">
-    <div id="fermeWindow" > <img src="image/WhiteCross.png" alt="bigbunny" alt="bigbunnymovie" id="image"
+    <div id="fermeWindow" > <img src="../image/WhiteCross.png" alt="bigbunny" alt="bigbunnymovie" id="image"
                                  onmouseover = "hovercross(this)" onmouseout = "unhovercross(this)" onclick="fermepage(1)">
     </div>
-    <div id="imagefilm"> <img src="image/bigbunny3.PNG" alt="bunny" id="affichedescrip"></div>
+    <div id="imagefilm"> <img src="../image/bigbunny3.PNG" alt="bunny" id="affichedescrip"></div>
     <div id="encadrementtitrefilm2"><h2 id="styletitrefilm2"> Big Buck Bunny</h2></div>
 </div>
 <div id="bas">
@@ -40,4 +40,3 @@
 
 </body>
 </html>
-
