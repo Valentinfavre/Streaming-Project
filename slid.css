@@ -1,0 +1,44 @@
+body{
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    background-color:  black;
+}
+img.alignRight{
+    margin: 0 0 0 15px;
+    float:right;
+}
+img.alignLeft{
+    margin: 0 15px 0 0;
+    float: left;
+}
+img.alignCenter{
+    display: block;
+    margin: 0 auto;
+}
+
+#conteneur h1{
+    color: white;
+}
+
+#conteneur h2{
+    color: white;
+}
+
+.group-center{
+    text-align: center;
+}
+
+.group-center img{
+    display: inline-block;
+}
+
+
+input{
+    margin: .4rem 0;
+}
+
+.h1{
+    float: left;
+}
+
