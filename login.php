@@ -78,7 +78,7 @@ else {
                    value="LOGIN"/>
 
             <div class="register">
-                Register
+                <a href="new_account.php">Register</a>
             </div>
         </form>
     </div>

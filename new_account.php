@@ -1,3 +1,21 @@
+<?php
+$incorrect = false;
+
+if (isset($_POST['username']) || isset($_POST['name']) || isset($_POST['email'])
+|| isset($_POST['mdp']) || isset($_POST['confirm_mdp'])) {
+    $monfichier = fopen('exemple.txt', 'a+');
+    fputs($monfichier, '{'.$_POST['username ']."\n");
+    fputs($monfichier, $_POST['name ']."\n");
+    fputs($monfichier, $_POST['email ']."\n");
+    fputs($monfichier, $_POST['mdp '].'}'."\n"."\n");
+    fclose($monfichier);
+}
+
+else{
+    echo "jsp2";
+}
+?>
+
 <!DOCTYPE html>
 <html lang=fr dir="ltr">
 <head>
@@ -16,7 +34,7 @@
          alt="logo"/>
 
     <div class="donnée_utilisateur">
-        <form action ="login.php" method="post">
+        <form action ="new_account.php" method="post">
             <table>
                 <tr>
                     <td>
@@ -36,7 +54,7 @@
                     </td>
                     <td>
                         <div class="barre2">
-                            <input type="text" class="barre" name="username" id="username" required
+                            <input type="text" class="barre" name="name" id="name" required
                             placeholder=" Name">
                         </div>
                     </td>
@@ -79,7 +97,12 @@
                 </tr>
 
             </table>
-
+            <div class="error">
+                <?php
+                if ($incorrect) {
+                    echo "<script>alert('Remplissez tous les champs demandez');</script>";
+                }
+                ?>
             </div>
 
             <input type="submit"
