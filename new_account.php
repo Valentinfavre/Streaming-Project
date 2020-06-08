@@ -1,19 +1,19 @@
 <?php
 $incorrect = false;
 
-if (isset($_POST['username']) || isset($_POST['name']) || isset($_POST['email'])
-|| isset($_POST['mdp']) || isset($_POST['confirm_mdp'])) {
-    $monfichier = fopen('exemple.txt', 'a+');
-    fputs($monfichier, '{'.$_POST['username ']."\n");
-    fputs($monfichier, $_POST['name ']."\n");
-    fputs($monfichier, $_POST['email ']."\n");
-    fputs($monfichier, $_POST['mdp '].'}'."\n"."\n");
-    fclose($monfichier);
+if (isset($_POST['username']) && isset($_POST['name']) && isset($_POST['email'])
+&& isset($_POST['mdp']) && isset($_POST['confirm_mdp'])) {
+    if($_POST['mdp'] != $_POST['confirm_mdp'])
+    {
+        $incorrect = true;
+    }
+    else
+    {
+        include 'donneecreationcompte.php';
+        header('Location: login.php');
+    }
 }
 
-else{
-    echo "jsp2";
-}
 ?>
 
 <!DOCTYPE html>
@@ -100,11 +100,10 @@ else{
             <div class="error">
                 <?php
                 if ($incorrect) {
-                    echo "<script>alert('Remplissez tous les champs demandez');</script>";
+                    echo "Enter the same password please";
                 }
                 ?>
             </div>
-
             <input type="submit"
                    class="create"
                    value="CREATE A NEW ACCOUNT"/>

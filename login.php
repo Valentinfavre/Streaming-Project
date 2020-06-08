@@ -1,19 +1,27 @@
 <?php session_start();
 
-$incorrect = false;
+$jsondata = json_decode(file_get_contents("compte.json"));
+$incorrect=false;
 
 if (!isset($_POST['mdp']) || !isset($_POST['identifiant']))
 {
 }
-elseif ($_POST['mdp'] !== "kangourou" || $_POST['identifiant'] !== "kangourou")
-{
-    $incorrect = true;
+else{
+    foreach($jsondata as $compte):
+        if($_POST['identifiant'] == "admin" && $_POST['mdp'] == "admin")
+        {
+            header('Location: adminpanel/index.php');
+        }
+        if($compte->email == $_POST['identifiant'] && $compte->password == $_POST['mdp'])
+        {
+            header('Location: index.php');
+        }
+        else
+        {
+            $incorrect = true;
+        }
+    endforeach;
 }
-else {
-    $_SESSION['login'] = 1;
-    header('Location: index.php');
-}
-
 
 ?>
 
@@ -43,7 +51,7 @@ else {
                     </td>
                     <td>
                         <div class="barre1"><input type="text" class="barre" name="identifiant" id="identifiant"
-                               required placeholder=" Username or email"/></div>
+                               required placeholder=" E-mail adress"/></div>
                     </td>
                 </tr>
                 <tr>
@@ -60,7 +68,7 @@ else {
             <div class="error">
                 <?php
                 if ($incorrect) {
-                    echo "<script>alert('Password or username is incorrect');</script>";
+                    echo "Password or e-mail adress is incorrect";
                 }
                 ?>
             </div>

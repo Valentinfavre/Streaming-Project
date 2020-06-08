@@ -1,0 +1,32 @@
+[
+    {
+        "username": "th\u00e9otim",
+        "name": "cl\u00e9ment",
+        "email": "theo.cl\u00e9ment@gmail.com",
+        "password": "justin"
+    },
+    {
+        "username": "gaetan",
+        "name": "congiu",
+        "email": "gaetan.congiu@gmail.com",
+        "password": "azerty"
+    },
+    {
+        "username": "bertrand",
+        "name": "zagula",
+        "email": "bertrand.zagula@gmail.com",
+        "password": "qwerty"
+    },
+    {
+        "username": "valentin",
+        "name": "favre",
+        "email": "valentin.favre@gmail.com",
+        "password": "orange"
+    },
+    {
+        "username": "julina",
+        "name": "matouassila",
+        "email": "julina.matouassila@gmail.com",
+        "password": "ilovec++"
+    }
+]
