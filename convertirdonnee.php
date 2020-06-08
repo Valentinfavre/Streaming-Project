@@ -1,12 +1,12 @@
 <?php
 
-$myFile = "film.json";
-$arr_data = array(); // create empty array
+$monfichier = "film.json";
+$montableau = array();
 
 try
 {
-    //Get form data
-    $formdata = array(
+
+    $donneerecuperer = array(
         'numerodefilm'=> $_POST['numerofilm'],
         'titre'=> $_POST['titrefilm'],
         'photoFilm'=>$_POST['photofilm'],
@@ -14,28 +14,32 @@ try
         'film'=> $_POST['mp4']
     );
 
-    //Get data from existing json file
-    $jsondata = file_get_contents($myFile);
+    //récupére bien les donner déja dans film.json
+    $donnee = file_get_contents($monfichier);
+    //convertit les donner json en tableau json
+    $montableau = json_decode($donnee, true);
+    ///rajout des donner q'uon vient de rentrer dans le tableau
+    array_push($montableau,$donneerecuperer);
+    //on ré en code en json
+    $donnee = json_encode($montableau, JSON_PRETTY_PRINT);
+    /// on envoi tout ca
+    if(file_put_contents($monfichier, $donnee)) {
 
-    // converts json data into array
-    $arr_data = json_decode($jsondata, true);
-
-    // Push user data to array
-    array_push($arr_data,$formdata);
-
-    //Convert updated array to JSON
-    $jsondata = json_encode($arr_data, JSON_PRETTY_PRINT);
-
-    //write json data into data.json file
-    if(file_put_contents($myFile, $jsondata)) {
-        echo 'Data successfully saved';
+        echo "<script type='text/javascript'>
+                alert('SUCCESSFUL');
+                window.location = \"http://localhost/backend.php\";
+            </script>";
     }
     else
-        echo "error";
+        echo "<script type='text/javascript'>
+                alert('ERROR');
+                window.location = \"http://localhost/backend.php\";
+            </script>";
 
 }
 catch (Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }
-
+// source pour m'avoir aider http://www.kodecrash.com/javascript/read-write-json-file-using-php/
 ?>
+

@@ -1,10 +1,30 @@
-{
-  "film": [
+[
     {
-    "titre": "bunnybuck",
-
-
+        "numerodefilm": "1",
+        "titre": "Big Buck Bunny",
+        "photoFilm": "bigbunny.PNG",
+        "titrecourt": "bigbuckbunny",
+        "film": "http:\/\/localhost\/film\/bigbuckbuny.mp4"
+    },
+    {
+        "numerodefilm": "2",
+        "titre": "Fast And Furious",
+        "photoFilm": "fast.PNG",
+        "titrecourt": "FastandFurious",
+        "film": "http:\/\/localhost\/film\/FastAndFurious9.mp4"
+    },
+    {
+        "numerodefilm": "3",
+        "titre": "Johnn",
+        "photoFilm": "john.PNG",
+        "titrecourt": "john",
+        "film": "http:\/\/localhost\/film\/JohnHenry.mp4"
+    },
+    {
+        "numerodefilm": "4",
+        "titre": "zag",
+        "photoFilm": "john.PNG",
+        "titrecourt": "zag",
+        "film": "http:\/\/localhost\/film\/JohnHenry.mp4"
     }
-
-  ]
-}
+]
