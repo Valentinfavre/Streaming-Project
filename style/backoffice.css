@@ -1,0 +1,111 @@
+body {
+background-image: url('/ressources/login/background.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+}
+
+header {
+
+  position:static;
+  width: 100%;
+  background-color:#C71585;
+  color: black;
+  text-align: center;
+}
+.icon_header {
+max-height: 150px;
+max-width: 200px;
+width: 120px;
+height: 120px;
+
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fd6c9e;
+  color: black;
+  text-align: center;
+}
+
+.accounts {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.accounts:hover {
+background-position: right center;
+}
+
+.admin_modos {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.admin_modos:hover {
+background-position: right center;
+}
+.Contents {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.Contents:hover {
+background-position: right center;
+}
+.addvideo {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.addvideo:hover {
+background-position: right center;
+}
+.addmusic {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.addmusic:hover {
+background-position: right center;
+}
+.backup {
+display:block;
+width:300px;
+line-height:50px;
+text-align:center;
+vertical-align:middle;
+background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+color:white;
+text-decoration:none;
+}
+.backup:hover {
+background-position: right center;
+}
